@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #f7eedd;
+    line-height: 1.2 !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+}
+
+.navv {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: #1ca38c;
+    position: fixed;
+    max-height: 100px;
+    top: 0;
+    z-index: 5;
+}
+
+.navv #logo {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin: auto 0;
+}
+
+.navv ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+.navv ul li a {
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    padding: 25px 45px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navv ul ul li a::before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 0%;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.navv ul li:hover a::before {
+    width: 100%;
+}
+
+.navv ul li:hover a {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo2 {
+    max-width: 140px;
+    max-height: fit-content;
+    margin-top: 15px;
+    margin-left: 1px;
+    display: flex;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.contentss {
+    position: relative;
+    text-align: center;
+    background-color: #1ca38a;
+    Width: 100%;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/* /* Shrinking for mobile */
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .contentss {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.footer {
+    width: 100%;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #1ca38c;
+    opacity: 0, 9;
+}
+
+
+/* Hover affect on social media icon */
+
+.socialIcons a:hover {
+    background-color: #1ca38c;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 10px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.user-cart span {
+    background-color: red;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: -1.2rem;
+}
+
+
+/*********** admin dashboard styling **********/
+
+.card {
+    background-color: #00967a;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 5px #3B3131;
+}
+
+
+/************************** for sidebar ***********************************/
+
+
+/* The sidebar menu */
+
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 199;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #00967a;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+/* The sidebar links */
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar .side-header {
+    margin-left: 30px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover {
+    background-color: #1ca38c;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 34px;
+    margin-left: 50px;
+}
+
+
+/* The button used to open the sidebar */
+
+.openbtn {
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: #1ca38a;
+    top: 4%;
+    z-index: 999;
+}
+
+.openbtn:hover {
+    color: #ECDAC9;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+
+/************************** product table styling *********************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+}
+
+td,
+th {
+    padding: 10px 16px;
+    text-align: center;
+}
+
+th {
+    background-color: #1ca38a;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+}
+
+tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+
+/************************ login and sign up styling  ******************************/
+
+.card-container.card-account {
+    max-width: 500px;
+    padding: 30px 30px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+/*
+* Card component
+*/
+
+.card-account {
+    background-color: #ECDAC9;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 40px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+/*
+* Form styles
+*/
+
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #1ca38a;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: #ab9787;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #8a7a6d;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #8a7a6d;
+}
+
+.btn.btn-signin {
+    background-color: #1ca38a;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: #a56a39;
+}
+
+.box {
+    position: relative;
+    background-color: #000;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: contain;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box:hover .image {
+    opacity: 0.3;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #1ca38a;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+/* *******************   cart to login icon styling   ********************* */
+
+.cart-login-btn {
+    margin: 5px;
+    border-style: outset;
+}
+
+.cart-login-btn a i {
+    padding: 10px;
+    font-size: 30px;
+    color: #1ca38a;
+}
+
+.cart-login-btn a i:hover {
+    color: #1ca38a;
+}
+
+
+/* ****************************   footer  *************************** */
+
+.footer-hover {
+    color: #000;
+}
+
+.footer-hover:hover {
+    color: #ECDAC9;
+    text-decoration: none;
+}

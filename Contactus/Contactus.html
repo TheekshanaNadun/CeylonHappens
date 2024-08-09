@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <nav class="navv">
+        <a href="#" id="logo"><img src="assets/logo 2.png" class="logo2"></a>
+        <ul>
+            <li><a href="http://localhost/CeylonHappens/index.php">Home</a></li>
+            <li><a href="http://localhost/CeylonHappens/aboutus/index.php">About Us</a></li>
+            <li><a href="http://localhost/CeylonHappens/events/form.php">Event</a></li>
+            <li><a href="http://localhost/CeylonHappens/news/news.php">News</a></li>
+            <li><a href="http://localhost/CeylonHappens/contactus/contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="contact-section" style="margin-top: 5%;">
+        <div class="contact-bg">
+            <h3>Get in Touch With Us</h3>
+            <h2>Contact Us</h2>
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p class="text">Step into the spotlight and share your event with ease. Need assistance or have questions? We're here for you! Connect with our team today and let's bring your event to life.</p>
+        </div>
+
+        <div class="contact-body">
+            <div class="contact-info">
+                <div>
+                    <span><i class="fas fa-mobile-alt"></i></span>
+                    <span>Phone No.</span>
+                    <span class="text">034-6622890</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-envelope-open"></i></span>
+                    <span>E-mail</span>
+                    <span class="text">CeylonHappens@gmail.com</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Address</span>
+                    <span class="text">No.50, Fonseka Road, Colombo 4</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-clock"></i></span>
+                    <span>Opening Hours</span>
+                    <span class="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <h4>Send Your Message</h4>
+                    <div>
+                        <input type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name" required>
+                        <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <textarea rows="5" id="message" name="message" placeholder="Message" class="form-control" required></textarea>
+                    <input type="submit" class="send-btn" value="Send Message">
+                </form>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.016937353389!2d79.8555308744826!3d6.888574218814319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bc303199601%3A0xae20e31365516d8b!2sESOFT%20Metro%20Campus%20(Block%20E)!5e0!3m2!1sen!2slk!4v1704179965602!5m2!1sen!2slk"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Waves Container -->
+    <div class="footer">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(111, 197, 182)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgb(61, 176, 157)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(27, 161, 139)" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- Content starts -->
+    <div class="contentss flex">
+        <img src="assets/logo 2.png" style="max-width: 140px; max-height: fit-content; margin-top: 15px; margin-left: 1px;">
+        <div class="footerNav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p style="padding-bottom:20px; padding-top:15px; color:white;">Copyright &copy;2024; Designed by Theekshana Nadun</p>
+    </div>
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66a8e81f32dca6db2cb7737e/1i41tg6o3';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+
+    <!-- JavaScript to handle form submission -->
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        var formData = new FormData(this);
+
+        fetch('submit_contact.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // Parse the JSON response
+        .then(data => {
+            if (data.status === 'success') {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: data.message,
+                    confirmButtonColor: '#3085d6'
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.message,
+                    confirmButtonColor: '#3085d6'
+                });
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                confirmButtonColor: '#3085d6'
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
